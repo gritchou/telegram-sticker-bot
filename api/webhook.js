@@ -4,8 +4,9 @@ const TelegramBot = require('node-telegram-bot-api');
 // https://github.com/yagop/node-telegram-bot-api/issues/319#issuecomment-324963294
 // Fixes an error with Promise cancellation
 // process.env.NTBA_FIX_319 = 'test';
+
+const matchingWord = /orge|cheh/i;
 const stickerId = process.env.STICKER_ID;
-const matchingWord = /orge/i;
 
 module.exports = async (request, response) => {
 	try {
